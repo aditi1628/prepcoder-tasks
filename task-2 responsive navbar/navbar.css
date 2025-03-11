@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-around; /* Ensures equal spacing between items */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0; /* Adds vertical padding */
+}
+
+.topnav a, .dropdown {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 16px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .topnav a, .dropdown {
+        width: 100%;
+        text-align: center;
+    }
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+    }
+}

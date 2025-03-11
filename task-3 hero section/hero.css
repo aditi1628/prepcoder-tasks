@@ -1,0 +1,98 @@
+/* Reset styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section with Gradient Background */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(45deg, #FF7E5F, #feb47b); /* Gradient from pink to orange */
+    color: white;
+    position: relative;
+    padding: 0 20px;
+}
+
+/* Hero content with darker overlay */
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Headline with more vibrant font */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #f5f5f5;  /* Light greyish white */
+}
+
+/* Subtext */
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+    opacity: 0.9;
+}
+
+/* CTA Button */
+.btn {
+    display: inline-block;
+    background: #4CAF50; /* Green button */
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #45a049; /* Darker green for hover */
+    transform: scale(1.1);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 50px;
+    text-align: center;
+    background: #f1f1f1;  /* Light grey background for the section */
+    color: #333;
+    border-top: 3px solid #FF7E5F; /* Border matching the hero background */
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: #555;  /* Darker grey for text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
