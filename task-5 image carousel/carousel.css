@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Customize Slick navigation arrows */
+.slick-prev, .slick-next {
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: rgba(255, 87, 51, 0.9);
+}
+
+/* Customize navigation dots */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #ff5733;
+}
+.slick-dots li.slick-active button:before {
+    color: #ff5733;
+}
