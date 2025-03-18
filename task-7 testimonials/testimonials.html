@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Slider</title>
+    <link rel="stylesheet" href="testimonials.css" />
+    <script src="testimonials.js" defer></script>
+  </head>
+  <body>
+    <div class="testimonial-container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+          <p>"Amazing service! Highly recommended!"</p>
+          <h4>- John Doe</h4>
+        </div>
+        <div class="testimonial-slide">
+          <p>"Great experience, I will definitely come back!"</p>
+          <h4>- Jane Smith</h4>
+        </div>
+        <div class="testimonial-slide">
+          <p>"Absolutely loved it! Fantastic work."</p>
+          <h4>- Alex Johnson</h4>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="prev-btn">&#10094;</button>
+      <button class="next-btn">&#10095;</button>
+
+      <!-- Dots for Navigation -->
+      <div class="dots-container">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+    width: 50%;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Heading */
+h2 {
+    color: #ff6600;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+
+.testimonial-slide {
+    display: none;
+    font-size: 18px;
+    color: #333;
+    font-style: italic;
+    padding: 15px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* Navigation Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: #ff4500;
+}
+
+.prev-btn {
+    left: 15px;
+}
+
+.next-btn {
+    right: 15px;
+}
+
+/* Dots */
+.dots-container {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 14px;
+    width: 14px;
+    margin: 5px;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.dot.active {
+    background-color: #ff6600;
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .testimonial-container {
+        width: 80%;
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
