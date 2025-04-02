@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio with Filters</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <section class="portfolio">
+      <h2>My Portfolio</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="web-design">
+          Web Design
+        </button>
+        <button class="filter-btn" data-category="graphic-design">
+          Graphic Design
+        </button>
+        <button class="filter-btn" data-category="app-development">
+          App Development
+        </button>
+      </div>
+
+      <div class="portfolio-gallery">
+        <div class="portfolio-item" data-category="web-design">
+          <img src="https://picsum.photos/800/400?random=1" alt="Web Design" />
+          <p>Web Design Project 1</p>
+        </div>
+        <div class="portfolio-item" data-category="graphic-design">
+          <img
+            src="https://picsum.photos/800/400?random=2"
+            alt="Graphic Design"
+          />
+          <p>Graphic Design Project 1</p>
+        </div>
+        <div class="portfolio-item" data-category="app-development">
+          <img
+            src="https://picsum.photos/800/400?random=3"
+            alt="App Development"
+          />
+          <p>App Development Project 1</p>
+        </div>
+        <div class="portfolio-item" data-category="web-design">
+          <img src="https://picsum.photos/800/400?random=4" alt="Web Design" />
+          <p>Web Design Project 2</p>
+        </div>
+        <div class="portfolio-item" data-category="graphic-design">
+          <img
+            src="https://picsum.photos/800/400?random=5"
+            alt="Graphic Design"
+          />
+          <p>Graphic Design Project 2</p>
+        </div>
+        <div class="portfolio-item" data-category="app-development">
+          <img
+            src="https://picsum.photos/800/400?random=6"
+            alt="App Development"
+          />
+          <p>App Development Project 2</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>

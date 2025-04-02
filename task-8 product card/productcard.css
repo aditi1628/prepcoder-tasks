@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 20px; /* Added padding for smaller screens */
 }
 
 /* Product Card */
@@ -84,4 +85,57 @@ body {
 .add-to-cart:hover {
     background: #ff4500;
     transform: translateY(-3px);
+}
+
+/* 🔹 Media Queries for Responsive Design */
+
+/* Large Screens (Desktops) */
+@media (min-width: 1024px) {
+    .product-card {
+        width: 350px;
+    }
+    .product-title {
+        font-size: 20px;
+    }
+    .product-price {
+        font-size: 18px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .product-card {
+        width: 280px;
+    }
+    .product-title {
+        font-size: 17px;
+    }
+    .product-price {
+        font-size: 15px;
+    }
+    .add-to-cart {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+    .product-card {
+        width: 90%;
+        padding: 10px;
+    }
+    .product-title {
+        font-size: 16px;
+    }
+    .product-price {
+        font-size: 14px;
+    }
+    .add-to-cart {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
 }

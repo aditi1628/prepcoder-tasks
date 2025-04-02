@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Cart System</title>
+    <link rel="stylesheet" href="ecom.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>🛒 Simple Cart System</h2>
+
+      <!-- Product List -->
+      <div class="products">
+        <div class="product">
+          <h3>Product 1</h3>
+          <p>Price: $10</p>
+          <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Product 2</h3>
+          <p>Price: $15</p>
+          <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Product 3</h3>
+          <p>Price: $20</p>
+          <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Cart Section -->
+      <h2>Your Cart 🛍️</h2>
+      <div class="cart">
+        <ul id="cart-items"></ul>
+        <p>
+          <strong>Total: $<span id="total-price">0</span></strong>
+        </p>
+      </div>
+    </div>
+
+    <script src="ecom.js"></script>
+  </body>
+</html>

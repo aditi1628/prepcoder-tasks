@@ -1,16 +1,43 @@
-/* HTML: <div class="loader"></div> */
+/* Loader Animation */
 .loader {
-    height: 30px;
-    aspect-ratio: 6;
-    --c: #0000 64%,#000 66% 98%,#0000 101%;
-    background:
-      radial-gradient(35% 146% at 50% 159%,var(--c)) 0 0,
-      radial-gradient(35% 146% at 50% -59%,var(--c)) 25% 100%;
-    background-size: calc(100%/3) 50%;
-    background-repeat: repeat-x;
-    clip-path: inset(0 100% 0 0);
-    animation: l2 1s infinite linear;
+  height: 30px;
+  aspect-ratio: 6;
+  --c: #0000 64%, #000 66% 98%, #0000 101%;
+  background:
+    radial-gradient(35% 146% at 50% 159%, var(--c)) 0 0,
+    radial-gradient(35% 146% at 50% -59%, var(--c)) 25% 100%;
+  background-size: calc(100% / 3) 50%;
+  background-repeat: repeat-x;
+  clip-path: inset(0 100% 0 0);
+  animation: l2 1s infinite linear;
+}
+
+/* Loader Animation Keyframes */
+@keyframes l2 {
+  90%, to {
+      clip-path: inset(0);
   }
-  @keyframes l2{
-    90%,to {clip-path: inset(0)}
+}
+
+/* 🔹 Media Queries for Responsiveness */
+
+/* Large Screens (Desktops) */
+@media (min-width: 1024px) {
+  .loader {
+      height: 40px;
   }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .loader {
+      height: 25px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .loader {
+      height: 20px;
+  }
+}

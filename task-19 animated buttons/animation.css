@@ -1,0 +1,147 @@
+ /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 20px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Base Button Styles */
+.btn {
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glow Effect */
+.glow {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    color: white;
+    box-shadow: 0 0 10px rgba(238, 9, 121, 0.5);
+}
+
+.glow:hover {
+    box-shadow: 0 0 20px rgba(238, 9, 121, 0.8);
+}
+
+/* Ripple Effect */
+.ripple {
+    background: linear-gradient(90deg, #00c9ff, #92fe9d);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s ease-out;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+.ripple:active::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Slide Effect */
+.slide {
+    background: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #007bff;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+}
+
+.slide:hover::before {
+    left: 0;
+}
+
+.slide:hover {
+    color: white;
+}
+
+/* Scale Effect */
+.scale {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: white;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .button-container {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    .button-container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
