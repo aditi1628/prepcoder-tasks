@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="multiStepForm">
+        <!-- Step 1 -->
+        <div class="form-step active">
+          <h2>Step 1: Personal Info</h2>
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+          <div class="buttons">
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="form-step">
+          <h2>Step 2: Contact Info</h2>
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <div class="buttons">
+            <button type="button" class="prev-btn">Previous</button>
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="form-step">
+          <h2>Step 3: Confirm Details</h2>
+          <p>Please review and submit your details.</p>
+          <div class="buttons">
+            <button type="button" class="prev-btn">Previous</button>
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>

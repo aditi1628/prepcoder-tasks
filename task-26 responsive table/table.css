@@ -1,0 +1,64 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f6f8;
+  }
+  
+  .table-container {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .responsive-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .responsive-table th,
+  .responsive-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-table thead {
+      display: none;
+    }
+  
+    .responsive-table tr {
+      display: block;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #eee;
+    }
+  
+    .responsive-table td {
+      display: block;
+      text-align: right;
+      padding: 12px;
+      font-size: 15px;
+      position: relative;
+    }
+  
+    .responsive-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #555;
+      text-align: left;
+    }
+  }
+  

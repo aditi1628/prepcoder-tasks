@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Table</title>
+    <link rel="stylesheet" href="table.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="table-container">
+      <table class="responsive-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Name">Alice Johnson</td>
+            <td data-label="Email">alice@example.com</td>
+            <td data-label="Role">Admin</td>
+            <td data-label="Status">Active</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Bob Smith</td>
+            <td data-label="Email">bob@example.com</td>
+            <td data-label="Role">Editor</td>
+            <td data-label="Status">Pending</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Charlie Rose</td>
+            <td data-label="Email">charlie@example.com</td>
+            <td data-label="Role">Subscriber</td>
+            <td data-label="Status">Inactive</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
